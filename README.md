@@ -1,33 +1,47 @@
 # Berry Browser
 
-Launch page and release hub for **Berry Browser** — the Chromium-based browser for BlackBerry 10.
+**Berry Browser** is a sideloadable **Chromium `.bar`** for BlackBerry 10 — a real GPU-rendered browser app (HTTPS, modern sites, YouTube, WhatsApp Web), not the stock WebKit browser.
 
-This repository is intentionally **not** the engine source tree. For patches, branches, and the full port narrative, see **[sw7ft/chromium-for-bb10](https://github.com/sw7ft/chromium-for-bb10)**.
+This repo is the **public launch page** and release hub. Engine source and patches live in **[chromium-for-bb10](https://github.com/sw7ft/chromium-for-bb10)**.
 
-## What lives here
+**Live site:** [sw7ft.github.io/berry-browser](https://sw7ft.github.io/berry-browser/)
 
-| Path | Purpose |
-|------|---------|
-| `index.html` | Project landing page (story, stable download, links) |
-| `experimental/` | Pointer page for experimental `.bar` builds |
-| GitHub **Releases** | Attach experimental BAR files (stable BAR also linked from the site) |
+**Demo (Passport walkthrough):** [YouTube — starts at the demo (~8:55)](https://www.youtube.com/watch?v=5H_1-b8XfA0&t=535s)
+
+## Screenshots
+
+Built-in start page — search, URL bar, and shortcuts (DuckDuckGo default):
+
+![Berry Browser start page on BB10](assets/screenshots/start-page.png)
+
+Settings — auto-detect panel size and touch mapping at launch, or pick your BB10 model (Passport, Classic, Q10, Z series, etc.):
+
+![Berry Browser device settings](assets/screenshots/device-settings.png)
 
 ## Stable download
 
-Latest recommended build (as of site publish): **[BerryBrowserV3-3.0.2-build84.bar](https://github.com/sw7ft/chromium-for-bb10/raw/main/releases/BerryBrowserV3-3.0.2-build84.bar)** — canonical copy in [chromium-for-bb10/releases](https://github.com/sw7ft/chromium-for-bb10/tree/main/releases).
+**Latest:** [BerryBrowserV3-3.0.2-build84.bar](https://github.com/sw7ft/chromium-for-bb10/raw/main/releases/BerryBrowserV3-3.0.2-build84.bar) (~60 MB)  
+Canonical copy: [chromium-for-bb10/releases](https://github.com/sw7ft/chromium-for-bb10/tree/main/releases)
+
+Install: enable Development Mode → sideload the `.bar` (Sachesi, DDPB, or on-device BAR installer) → launch **Berry Browser** from the home screen.
+
+## What lives in this repo
+
+| Path | Purpose |
+|------|---------|
+| `index.html` | Landing page (demo embed, screenshots, download links) |
+| `assets/screenshots/` | Product screenshots (also embedded above) |
+| `experimental/` | Experimental `.bar` builds via GitHub Releases |
+| GitHub **Releases** | Attach tester BAR files |
 
 ## GitHub Pages
 
-1. Repo **Settings → Pages**
-2. Source: **Deploy from a branch**
-3. Branch: `main` / root (`/`)
+Published from **`main`** at repo root → **https://sw7ft.github.io/berry-browser/**
 
-Site URL will be `https://sw7ft.github.io/berry-browser/` (or a custom domain if you add one).
+## Related
 
-## Related projects
-
-- [chromium-for-bb10](https://github.com/sw7ft/chromium-for-bb10) — Chromium port & documentation
-- [BerryCore](https://github.com/sw7ft/BerryCore) — BB10/QNX userland & packaging
+- [chromium-for-bb10](https://github.com/sw7ft/chromium-for-bb10) — port, branches (`berry-v3`), documentation
+- [BerryCore](https://github.com/sw7ft/BerryCore) — BB10/QNX userland & `qpkg`
 - [berrycore.sw7ft.com](https://berrycore.sw7ft.com/)
 
 Not affiliated with BlackBerry Limited.
