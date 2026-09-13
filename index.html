@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Berry Browser — Chromium for BlackBerry 10</title>
-  <meta name="description" content="Berry Browser brings a modern Chromium engine to BlackBerry 10 — installable BAR, experimental builds, and the story behind the port.">
+  <meta name="description" content="Berry Browser — sideloadable Chromium .bar for BlackBerry 10. Demo video, screenshots, stable BAR download, experimental builds.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -17,7 +17,8 @@
   <header class="site-header">
     <a class="logo" href="#top">Berry Browser</a>
     <nav class="nav">
-      <a href="#story">Story</a>
+      <a href="#demo">Demo</a>
+      <a href="#story">What it is</a>
       <a href="#download">Download</a>
       <a href="#experimental">Experimental</a>
       <a href="#links">Engine</a>
@@ -26,19 +27,22 @@
 
   <main id="top">
     <section class="hero">
-      <p class="eyebrow">BlackBerry 10 · QNX · ARM32</p>
-      <h1>Modern web on hardware that refused to die.</h1>
+      <p class="eyebrow">Installable .bar · Chromium on QNX · BlackBerry 10</p>
+      <h1>The Chromium browser you sideload onto BB10.</h1>
       <p class="lead">
-        Berry Browser is a windowed Chromium app for BB10 phones — GPU rendering, TLS 1.3,
-        YouTube, WhatsApp Web, and a UI built for square Passports and classic keyboards.
-        This site is the home for releases and experiments, not the multi‑gigabyte engine tree.
+        Berry Browser is a real app — not a bookmark, not stock WebKit. It is a GPU‑rendered
+        Chromium window with a modern start page, HTTPS, YouTube, WhatsApp Web, and settings
+        tuned for Passport, Classic, Q10, and Z‑series phones. Watch the demo, grab the BAR,
+        or try experimental builds when you want the bleeding edge.
       </p>
       <div class="hero-actions">
+        <a class="btn btn-primary" href="#demo">Watch the demo</a>
         <a class="btn btn-primary" href="https://github.com/sw7ft/chromium-for-bb10/raw/main/releases/BerryBrowserV3-3.0.2-build84.bar">
           Download stable BAR
         </a>
-        <a class="btn btn-ghost" href="https://github.com/sw7ft/chromium-for-bb10">Read the port story</a>
+        <a class="btn btn-ghost" href="https://github.com/sw7ft/chromium-for-bb10">Engine &amp; source story</a>
       </div>
+      <img class="hero-shot" src="assets/screenshots/start-page.png" width="720" height="720" alt="Berry Browser start page on BlackBerry 10 — search bar and app shortcuts">
       <dl class="hero-stats">
         <div><dt>Latest stable</dt><dd>v3.0.2 · build 84</dd></div>
         <div><dt>Package</dt><dd>~60&nbsp;MB .bar</dd></div>
@@ -46,28 +50,93 @@
       </dl>
     </section>
 
+    <section id="demo" class="panel panel-alt">
+      <div class="panel-inner">
+        <h2>See it on a Passport</h2>
+        <p class="section-intro">
+          Full walkthrough: <strong>Berry Browser: Modern Chromium for BlackBerry 10 (Passport)</strong>
+          by SW7FT. The embed starts at the demo moment (~8:55); use the link if you prefer YouTube directly.
+        </p>
+        <div class="demo-block">
+          <div class="video-wrap">
+            <iframe
+              title="Berry Browser demo on BlackBerry 10 Passport"
+              src="https://www.youtube.com/embed/5H_1-b8XfA0?start=535"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <div class="demo-copy prose">
+            <h3>What you are looking at</h3>
+            <p>
+              A ~2024‑era Chromium engine running inside a native BB10 <strong>.bar</strong> —
+              windowed rendering, real tabs/toolbar chrome, and sites that stock BB10 simply
+              cannot load anymore. The video shows everyday use on a Passport: launching the app,
+              navigating the modern web, and the kind of performance you get when Blink and V8
+              replace the platform’s ancient WebKit fork.
+            </p>
+            <h3>Why it matters</h3>
+            <p>
+              Berry Browser is the productized end of the
+              <a href="https://github.com/sw7ft/chromium-for-bb10">chromium-for-bb10</a> port:
+              TLS with a bundled root store, GPU compositing, ad/tracker blocking at the network
+              layer, YouTube and messaging web apps, BB10 Share handoff, and pin‑to‑home‑screen —
+              packaged so you install it like any other sideloaded BAR.
+            </p>
+            <p>
+              <a class="btn btn-ghost" href="https://www.youtube.com/watch?v=5H_1-b8XfA0&t=535s">Open on YouTube ↗</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="screenshot-grid">
+          <figure class="shot">
+            <img src="assets/screenshots/start-page.png" width="720" height="720" alt="Berry Browser new tab page with search and shortcuts">
+            <figcaption>
+              <strong>Built‑in start page</strong>
+              DuckDuckGo search (or type a URL), quick links to search engines, news, WhatsApp,
+              Messenger, and more — a real browser home screen, not a wrapper around the old OS browser.
+            </figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/screenshots/device-settings.png" width="720" height="720" alt="Berry Browser settings — device auto-detect and BB10 models">
+            <figcaption>
+              <strong>Per‑device calibration</strong>
+              Auto‑detect panel size and touch mapping at launch (build 84+), or pick Passport, Classic,
+              Q10, Q5, Z10, Z30, or Z3 manually — square and tall layouts both supported.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
     <section id="story" class="panel">
       <div class="panel-inner">
-        <h2>What this is</h2>
+        <h2>What Berry Browser is (and is not)</h2>
         <div class="prose">
           <p>
-            BlackBerry 10 shipped with an aging WebKit fork. Years of work on
-            <a href="https://github.com/sw7ft/chromium-for-bb10">Chromium for BB10</a>
-            turned a headless <code>content_shell</code> experiment into a real browser:
-            EGL + Skia, a Skia-drawn toolbar, bundled root CAs, network-layer blocking,
-            and packaging as an installable <strong>.bar</strong>.
+            <strong>It is</strong> an installable BlackBerry 10 application — a Chromium‑powered
+            browser you sideload as <code>BerryBrowserV3-….bar</code>, launch from the home screen,
+            and use as your daily web client on supported BB10 10.3.x hardware.
           </p>
           <p>
-            <strong>Berry Browser</strong> is that app — the user-facing side of the port.
-            The engine, patches, and build history live in the chromium-for-bb10 repository
-            (branch <code>berry-v3</code>). This repository is the launch pad: downloads,
-            release notes, and experimental BAR files for testers.
+            <strong>It is not</strong> this GitHub repo’s source tree. Engine code, patches, and
+            build branches (including active <code>berry-v3</code>) live in
+            <a href="https://github.com/sw7ft/chromium-for-bb10">chromium-for-bb10</a>.
+            <strong>sw7ft/berry-browser</strong> is the public front door: demo, screenshots,
+            stable download links, and a place to publish experimental BAR files.
           </p>
           <p>
-            Berry Browser also fits alongside
-            <a href="https://github.com/sw7ft/BerryCore">BerryCore</a> and
-            <a href="https://berrycore.sw7ft.com/">berrycore.sw7ft.com</a> for a modernized
-            BB10/QNX userland — same ecosystem, different repo roles.
+            The port began as headless <code>content_shell</code> on QNX ARM32 and grew into
+            windowed EGL + Skia UI, BoringSSL, QUIC, and BAR packaging. Berry Browser is that
+            journey turned into something you can hand someone with a cable and a BAR file.
+          </p>
+          <p>
+            Works alongside
+            <a href="https://github.com/sw7ft/BerryCore">BerryCore</a> /
+            <a href="https://berrycore.sw7ft.com/">berrycore.sw7ft.com</a> when you use rooted
+            <code>qpkg</code> workflows — same ecosystem, different repos.
           </p>
         </div>
       </div>
