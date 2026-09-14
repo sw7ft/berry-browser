@@ -1,6 +1,6 @@
 # Berry Browser V3
 
-**Version 3.0.2, build 105** · **Chromium 120.0.6099.234** · `com.sw7ft.BerryShellV3`
+**Version 3.0.2, build 106** · **Chromium 120.0.6099.234** · `com.sw7ft.BerryShellV3`
 
 Berry Browser is a **modern web browser for BlackBerry 10**. It runs a genuine, current-generation **Chromium** engine on QNX — not a reskin of the stock 2013 WebKit browser — which means today's sites get today's rendering, JavaScript, and TLS. The engine is ported to BB10's native **Screen** graphics stack through a purpose-built **Ozone** backend, with **EGL compositing** on the device's Adreno GPU.
 
@@ -20,14 +20,24 @@ That depth is deliberate. Running a modern engine on decade-old hardware means t
 
 **Demo:** [YouTube — Passport walkthrough (~8:55)](https://www.youtube.com/watch?v=5H_1-b8XfA0&t=535s)
 
-## Download (build 105)
+## Download (build 106)
 
 | | |
 |---|---|
-| **BAR** | [BerryBrowserV3-3.0.2-build105.bar](https://github.com/sw7ft/berry-browser/releases/download/v3.0.2-build105/BerryBrowserV3-3.0.2-build105.bar) (~55 MB) |
-| **Release** | [v3.0.2-build105 notes](https://github.com/sw7ft/berry-browser/releases/tag/v3.0.2-build105) |
+| **BAR** | [BerryBrowserV3-3.0.2-build106.bar](https://github.com/sw7ft/berry-browser/releases/download/v3.0.2-build106/BerryBrowserV3-3.0.2-build106.bar) (~55 MB) |
+| **Release** | [v3.0.2-build106 notes](https://github.com/sw7ft/berry-browser/releases/tag/v3.0.2-build106) |
+| **Previous** | [build 105](https://github.com/sw7ft/berry-browser/releases/tag/v3.0.2-build105) |
 
 Enable Development Mode → sideload the `.bar` (Sachesi, DDPB, or on-device installer) → launch **Berry Browser**.
+
+## Support
+
+If Berry Browser helps you, please consider supporting:
+
+- **[SW7FT on Patreon](https://www.patreon.com/c/Sw7ft)** — Berry Browser, Chromium port, ongoing BB10 work
+- **[bb10root on Patreon](https://www.patreon.com/bb10root)** — legacy BB10 work; a BB10 warrior who truly deserves the credit
+
+Thank you to everyone in this community. **Long live BlackBerry.**
 
 ## Screenshots
 
