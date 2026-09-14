@@ -18,7 +18,10 @@ That depth is deliberate. Running a modern engine on decade-old hardware means t
 
 **Live promo site:** [sw7ft.github.io/berry-browser](https://sw7ft.github.io/berry-browser/)
 
-**Demo:** [YouTube — Passport walkthrough (~8:55)](https://www.youtube.com/watch?v=5H_1-b8XfA0&t=535s)
+**Demo videos:**
+
+- [Berry Browser: Modern Chromium for BlackBerry 10 (Passport)](https://www.youtube.com/watch?v=5H_1-b8XfA0&t=535s) — deep demo (~8:55 in)
+- [Berry Browser Beta Release! Modern Browser for Blackberry10](https://www.youtube.com/watch?v=y1RvJTSL-Ic) — beta tour, more feature exploration
 
 ## Download (build 106)
 
