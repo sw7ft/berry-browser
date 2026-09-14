@@ -361,6 +361,108 @@ main {
   box-shadow: 0 32px 80px rgba(0, 0, 0, 0.55);
 }
 
+.beta-banner {
+  position: relative;
+  z-index: 11;
+  text-align: center;
+  padding: 0.55rem 1rem;
+  font-size: 0.88rem;
+  background: rgba(196, 30, 58, 0.2);
+  border-bottom: 1px solid rgba(196, 30, 58, 0.35);
+  color: #ffc9d4;
+}
+
+.version-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  justify-content: center;
+  margin: 1.25rem 0 0;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+.version-strip span {
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+}
+
+.promo-lead {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--text);
+  max-width: 44rem;
+  margin: 0 auto 1.5rem;
+}
+
+.spec-grid {
+  display: grid;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+@media (min-width: 700px) {
+  .spec-grid { grid-template-columns: 1fr 1fr; }
+}
+
+.spec-card {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem;
+}
+.spec-card h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1.05rem;
+  color: #c4b5fd;
+}
+.spec-card p, .spec-card ul {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.spec-card ul { padding-left: 1.1rem; }
+
+.settings-overview {
+  columns: 1;
+  column-gap: 2rem;
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
+@media (min-width: 640px) {
+  .settings-overview { columns: 2; }
+}
+.settings-overview li { break-inside: avoid; margin-bottom: 0.35rem; }
+
+.tuning-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.tuning-list li {
+  font-size: 0.82rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(124, 92, 255, 0.12);
+  border: 1px solid rgba(124, 92, 255, 0.25);
+  color: #ddd6fe;
+}
+
+.panel-callout {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius);
+  border: 1px solid rgba(196, 30, 58, 0.3);
+  background: rgba(196, 30, 58, 0.08);
+  color: #ffb3c1;
+  font-size: 0.95rem;
+}
+
 @media (max-width: 640px) {
   .site-header { flex-direction: column; gap: 0.75rem; align-items: flex-start; }
   .hero { padding-top: 2.5rem; }
